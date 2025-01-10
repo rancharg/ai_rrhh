@@ -2,7 +2,9 @@
   "name": "botpress",
   "private": true,
   "scripts": {
-    "build": "turbo build",
+  
+    "build": "turbo run build && pnpm -w run build",
+  "start": "node dist/index.js"
     "bump": "depsynky bump && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
