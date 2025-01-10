@@ -27,6 +27,7 @@
     "@botpress/cli": "^2.1.0",
     "@botpress/client": "^0.40.0",
     "@botpress/sdk": "^1.0.0",
+    "@botpress/chat-api": "^0.4.7"
     "@bpinternal/depsynky": "^0.0.2",
     "@bpinternal/readiness": "^0.0.16",
     "@stylistic/eslint-plugin": "^2.12.1",
