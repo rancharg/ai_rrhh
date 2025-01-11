@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "start": "npm start",
+    "start": "bp serve",
     "bump": "depsynky bump && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
