@@ -2,8 +2,7 @@
   "name": "botpress",
   "private": true,
   "scripts": {
-    "build": "pnpm run build && cd integrations/openai && bp bundle",
-    "start": "cd integrations/openai && bp serve",
+    "build": "turbo build",
     "bump": "depsynky bump && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
