@@ -1,5 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "outputs": ["bp_modules/**", ".botpress/**"],
+      "dependsOn": ["generate", "^build"]
+    }
+  },
   "tasks": {
     "generate": {
       "outputs": ["src/gen/**"],
@@ -26,6 +32,9 @@
       "dependsOn": ["generate", "^build"]
     },
     "check:type": {},
-    "check:bplint": {}
+    "check:bplint": {},
+    "start": {
+      "cache": false
+    }
   }
 }
